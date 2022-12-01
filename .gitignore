@@ -1,0 +1,7 @@
+# build
+/build
+lib
+bin
+
+# VS Code
+/.vscode
