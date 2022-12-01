@@ -11,10 +11,10 @@ all: lib/libcserv.a example/bin/cserv_example
 clean:
 	rm -rf build/*
 	rm -rf lib/*
-	mkdir -p build/obj
+	rm -rf example/bin/*
 
 setup:
-	mkdir -p build build/obj  lib
+	mkdir -p build build/obj example/bin lib
 
 build/obj/%.o: src/%.c setup
 	$(CC) $(CFLAGS) -c $< -o $@ $(LDFLAGS)
