@@ -9,7 +9,7 @@ static void handler(int fd)
 
 int main()
 {
-    cserver *serv = cserver_init("localhost", 8080, 0);
+    cserver *serv = cserver_init("0.0.0.0", 8080, 0);
     if (!serv)
         return 1;
     
